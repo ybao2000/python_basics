@@ -24,5 +24,5 @@ def grade_a_mark(mark):
         return "F"
 
 # print(grade_a_mark(72))
-mark = random.randint(0, 100)
-print(f"mark is {mark}, grade is {grade_a_mark(mark)}")
+# mark = random.randint(0, 100)
+# print(f"mark is {mark}, grade is {grade_a_mark(mark)}")

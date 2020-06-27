@@ -1,18 +1,7 @@
-### input
-# s = input("read something from the keyboard: ")
+import my_sqrt
+from grade_a_mark import grade_a_mark
+import random
 
-# print(s)
-
-# num = int(input("Please give me a number: "))
-# print(num)
-
-# strNum = input("Please give me a number: ")
-
-# if strNum.isdigit():
-# 	num = int(strNum)
-# 	print(num)
-# else:
-# 	print("Invalid number")
-
-v = '\u2660'
-print('\u2660')
+print(my_sqrt.my_sqrt(3))
+mark = random.randint(0, 100)
+print(f"mark is {mark}, grade is {grade_a_mark(mark)}")
