@@ -33,5 +33,5 @@ def split_simple_expr_2(expr):
 		# expr2 = expr.replace(' ', '').replace('+', ' + ').replace('-', ' - ').replace('*', ' * ').replace('/', ' / ')
 		# return expr2.split(' ')
 		return expr.replace(' ', '').replace('+', ' + ').replace('-', ' - ').replace('*', ' * ').replace('/', ' / ').split(' ')
-expr = '-331+14 -7*9'
-print(split_simple_expr_2(expr))
+# expr = '-331+14 -7*9'
+# print(split_simple_expr_2(expr))
