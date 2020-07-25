@@ -1,28 +1,14 @@
-# def name(arg1, arg2):
-# 	pass
-
 class User:
-	name = 'Alpha'
-	age = 10
+  def __init__(self, firstName, lastName):
+    self.firstName = firstName
+    self.lastName = lastName
 
-	# all functions inside class need self !!!
-	def intro(self):
-		# name = 'Frank'
-		# age = 5
-		print(self.name, self.age)
+  def __str__(self):
+    return f"{self.firstName}, {self.lastName}"
+    
+user1 = User("Frank", "Bao")
+print(user1)
 
-# you directly change the atrribte inside the class
-# use . for class.function
-# we also used . for package.module.function
 
-user1 = User()
-user1.name = "Bob"
-user1.age = 5
-user1.intro()
-
-user2 = User()
-user2.name = "Amily"
-user2.age = 15
-
-# user2.name = "Bob"
-user2.intro()
+user2 = User("Bobby", "Adams")
+print(user2)

@@ -1,3 +1,7 @@
-import calendar
+a = 7
+print(type(a))
 
-print(calendar.month(2020, 7))
+print(a)
+
+l = [1, 2, 3, 43, 5]
+print(l)
