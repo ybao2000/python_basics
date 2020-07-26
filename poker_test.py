@@ -20,10 +20,47 @@ class Card:
       sign = '\u2662'
     else:
       sign = '\u2663'
-    return f"{sign} {self.number}"
 
-card1 = Card(9, 4)
-print(card1)
+    if self.number == 11:
+      point = "J"
+    elif self.number == 12:
+      point = "Q"
+    elif self.number ==  13:
+      point = "K"
+    elif self.number == 1:
+      point = "A"
+    else:
+      point = str(self.number)
+    return sign + ' ' + point
+
+# card1 = Card(9, 4)
+# print(card1)
 
 
 # your exercise, randomely generate 2 cards, display the 2 cards, and compare them
+import random
+card1 = Card(random.randint(1, 13), random.randint(1, 4))
+card2 = Card(random.randint(1, 13), random.randint(1, 4))
+print(f"Card 1: {card1}")
+print(f"Card 2: {card2}")
+
+if card1.number == 1:
+  if card2.number != 1:
+    compare = True
+  else:
+    compare = card1.suit >= card2.suit
+elif card2.number == 1:
+  if card1.number != 1:
+    compare = False
+  else:
+    compare = card1.suit >= card2.suit
+else:
+  if card1.number == card2.number:
+    compare = card1.suit >= card2.suit
+  else:
+    compare = card1.number >= card2.number
+
+# ternary operator 
+answer = "Card 1 Wins!" if compare else "Card 2 wins!"
+
+print(answer)
